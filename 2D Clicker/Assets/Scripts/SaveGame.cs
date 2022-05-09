@@ -36,7 +36,7 @@ public class SaveGame : MonoBehaviour
         PlayerPrefs.SetInt("SavedCookies", GlobalCookies.cookieCount);
         PlayerPrefs.SetInt("SavedCash", GlobalCash.cashCount);
         PlayerPrefs.SetInt("SavedBakers", GlobalBaker.bakePerSec);
-        PlayerPrefs.SetInt("SavedShops", GlobalShop.shopPerSec);
+        PlayerPrefs.SetInt("SavedShops", GlobalShop.numberOfShops);
 
         saveValue *= 2;
 
