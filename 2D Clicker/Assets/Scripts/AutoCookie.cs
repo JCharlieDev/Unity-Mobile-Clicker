@@ -12,6 +12,7 @@ public class AutoCookie : MonoBehaviour
 
     private void Update()
     {
+        cookieIncrease = GlobalBaker.bakePerSec;
         internalIncrease = cookieIncrease;
 
         if (isCreatiingCookie == false)
@@ -24,6 +25,7 @@ public class AutoCookie : MonoBehaviour
 
     IEnumerator CreateTheCookie()
     {
+
         GlobalCookies.cookieCount += internalIncrease;
 
         yield return new WaitForSeconds(1.0f);
